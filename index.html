@@ -1,0 +1,162 @@
+<!DOCTYPE html>    
+<html>    
+<head>
+<title>Feed Back Form</title>    
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="style.css">   
+<style>    
+* {    
+  box-sizing: border-box;    
+}    
+    
+input[type=text], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+    
+input[type=submit] {    
+  background-color: rgb(37, 116, 161);    
+  color: white;    
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: right;    
+}    
+    
+input[type=submit]:hover {    
+  background-color: #45a049;    
+}    
+    
+.container {    
+  border-radius: 5px;    
+  background-color: #f2f2f2;    
+  padding: 20px;    
+}    
+    
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 6px;    
+}    
+    
+.col-75 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 6px;    
+}    
+    
+/* Clear floats after the columns */    
+.row:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+}    
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Star rating</title>
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */    
+</style>    
+</head>    
+<body>    
+<h2>FEED BACK FORM</h2>    
+<div class="container">    
+  <form>      
+       <div class="row">    
+      <div class="col-25">    
+        <label for="subject">Subject</label>    
+      </div>    
+      <div class="col-75">    
+        <select id="subject" name="subject">  
+        <option value="none">Select Subject</option>    
+          <option value="dm">Discrete Mathematics</option>    
+          <option value="ds">Data Structures</option>    
+          <option value="dpsd">Digital Principle and System Design</option>    
+          <option value="oops">Object Oriented Programming</option>    
+          <option value="ce">Communication Engineering</option>    
+        </select>    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="staff">Staff</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="staff" name="staff" placeholder="Your staff..">    
+      </div>  
+      </div> 
+       <div class="row">    
+      <div class="col-25">    
+        <label for="rating">Rating</label>    
+      </div>   
+       <div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+  </div>
+      <div class="row">    
+      <div class="col-25">    
+        <label for="feed_back">Feed Back</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="feedback" name="feedback" placeholder="Write something.." style="height:100px"></textarea>    
+      </div>    
+    </div>  
+<label for="drop-down">Makes topic easily understandable</label>
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>  
+<label for="drop-down">Have sound and updated knowledge on subject</label>
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
+  <label for="drop-down">Gives adequate information considering students level</label>
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
+  <label for="drop-down">Provides additional material apart from Textbook</label>
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
+  <label for="drop-down">Assignments follow-up</label>
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
+   <label for="drop-down">Transparency in correction</label>
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
+     <label for="drop-down">Conducts and maintains conductive environment for learning</label>
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
+</div>  
+      </div>    
+       
+      </div>  
+      </div>   
+
+    <div class="row">    
+      <input type="submit" value="Submit">    
+    </div>    
+  </form>    
+</div>    
+ 
+</body>    
+</html> 
